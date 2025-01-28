@@ -9,6 +9,7 @@ TagManager:
   - Fishy
   - PlaceDeLaCrevette
   - SpawnCrevette
+  - ShrimpBubbles
   layers:
   - Default
   - TransparentFX
