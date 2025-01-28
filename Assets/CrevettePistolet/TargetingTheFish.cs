@@ -26,9 +26,6 @@ public class TargetingTheFish : MonoBehaviour
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         transform.Translate(Vector2.right * speed * Time.deltaTime);
-    }    // Update is called once per frame
-        void Update()
-    {
+    }   
         
-    }
 }

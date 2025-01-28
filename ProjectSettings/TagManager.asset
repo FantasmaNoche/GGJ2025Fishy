@@ -12,6 +12,7 @@ TagManager:
   - CrevettePistolet
   - PlaceDeLaCrevette
   - SpawnCrevette
+  - ShrimpBubbles
   layers:
   - Default
   - TransparentFX
