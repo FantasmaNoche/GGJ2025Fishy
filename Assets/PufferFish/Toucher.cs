@@ -9,7 +9,7 @@ public class Toucher : MonoBehaviour
     {
         if (coll.gameObject.name == "Bullet")
         {
-            Debug.Log("Toucher ");
+            Debug.Log("Toucher");
 
         }
     }

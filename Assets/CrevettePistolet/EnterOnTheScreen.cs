@@ -5,12 +5,12 @@ using UnityEngine;
 public class EnterOnTheScreen : MonoBehaviour
 {
     public int speedBullet = 7;
-    public GameObject fish;
+    public GameObject fishy;
     public string detected_Fish;
 
     void Start()
     {
-        foreach (GameObject Enemies in GameObject.FindGameObjectsWithTag("Fish"))
+        foreach (GameObject Enemies in GameObject.FindGameObjectsWithTag("Fishy"))
         {
         }
     }
