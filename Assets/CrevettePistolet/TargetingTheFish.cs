@@ -4,7 +4,7 @@ using UnityEngine;
 public class TargetingTheFish : MonoBehaviour
 {
     public Transform target;
-    public float rotationSpeed = 200f;
+    public float rotationSpeed = 100f;
     public float speed = 10f;
 
 
