@@ -19,11 +19,13 @@ public class FishyCounter : MonoBehaviour
 
     IEnumerator CountCoroutine()
     {
+        yield return new WaitForSeconds(1);
+        
         while (true)
         {
         click++;
         UpdateClickText();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2);
         }
     }
     

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6334106237405138395}
   - component: {fileID: 3081687892363148122}
   - component: {fileID: 7998526989603648355}
+  - component: {fileID: -6806993150285144009}
+  - component: {fileID: 5024487823254873273}
   m_Layer: 0
   m_Name: FishyLvl4
   m_TagString: Fishy
@@ -149,3 +151,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: 0
   currentclick: 0
+--- !u!114 &-6806993150285144009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9052589243943295319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d170e2e477e7043b6fb900605c328b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCharge: 0
+  fishyLvl4: {fileID: 5024487823254873273}
+--- !u!114 &5024487823254873273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9052589243943295319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54eac88fa72cf064d8f081f0d28c63f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minCharge: 0
+  maxCharge: 100
+  charging: 10
+  currentCharge: 0

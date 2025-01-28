@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9125628898217745140}
   - component: {fileID: 1322709814507918420}
-  - component: {fileID: -8673737050680988321}
   m_Layer: 0
   m_Name: Fishy
   m_TagString: Fishy
@@ -52,17 +51,3 @@ MonoBehaviour:
   clicksForLevel: 000000000a00000019000000
   FishyBase: {fileID: 1103469902668056878}
   clicks: 0
---- !u!114 &-8673737050680988321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1103469902668056878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74da498042ed9c441bb9d62f83f6335d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  click: 0
-  currentclick: 0
