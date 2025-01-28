@@ -1,27 +1,59 @@
+using System;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Serialization;
+
 public class Fishy : MonoBehaviour
 {
-    public FishyCounter fishyCounter;
-    public GameObject FishyLvl2;
+    private FishyCounter fishyCounter;
+    public GameObject[] levels;
+    public int[] clicksForLevel;
+    
     public GameObject FishyBase;
+
+
+    public int clicks = 10;
+    
+    
+    private int currentLevel = -1;
+    private GameObject lvlInstance;
+    
+    private void Start()
+    {
+        fishyCounter = GameObject.FindFirstObjectByType<FishyCounter>();
+    }
+
     void Update()
     {
+        UpdateLevel();
+    }
+
+    private void UpdateLevel()
+    {
+        int newLevel = 0;
+        foreach (int click in clicksForLevel)
+        {
+            if(fishyCounter.click >= click)
+                newLevel = newLevel + 1;
+            else
+                break;
+        }
+
         
-        if (fishyCounter.click == 10)
-            { 
-                Destroy(gameObject);
-                Instantiate(FishyLvl2, transform.position, Quaternion.identity);
-            }
-        if (fishyCounter.click == 5)
-        { 
-            FishyLvl2.SetActive(true);
-            FishyBase.SetActive(false);
+        if (newLevel != currentLevel)
+        {
+            if(lvlInstance != null)
+                Destroy(lvlInstance);
+
+            
+            GameObject prefab = levels[newLevel - 1];
+            lvlInstance = Instantiate(prefab, transform);
+            lvlInstance.transform.localPosition = Vector3.zero;
+            currentLevel = newLevel;
         }
         
-       
-      
-        
-        
     }
+
+    
+  
 }
