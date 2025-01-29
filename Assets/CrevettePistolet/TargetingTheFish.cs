@@ -12,9 +12,26 @@ public class TargetingTheFish : MonoBehaviour
 
     void Start()
     {
-        if (target == null && GameObject.FindGameObjectWithTag("Fishy") != null)
+        if (target == null && GameObject.FindGameObjectWithTag("FishyLvl1") != null)
         {
-            target = GameObject.FindGameObjectWithTag("Fishy").transform;
+            target = GameObject.FindGameObjectWithTag("FishyLvl1").transform;
+        }
+
+        if (target == null && GameObject.FindGameObjectWithTag("FishyLvl2") != null)
+        {
+            target = GameObject.FindGameObjectWithTag("FishyLvl2").transform;
+        }
+        if (target == null && GameObject.FindGameObjectWithTag("FishyLvl3") != null)
+        {
+            target = GameObject.FindGameObjectWithTag("FishyLvl3").transform;
+        }
+        if (target == null && GameObject.FindGameObjectWithTag("FishyLvl4") != null)
+        {
+            target = GameObject.FindGameObjectWithTag("FishyLvl4").transform;
+        }
+        if (target == null && GameObject.FindGameObjectWithTag("FishyLvl5") != null)
+        {
+            target = GameObject.FindGameObjectWithTag("FishyLvl5").transform;
         }
     }
         private void FixedUpdate()
