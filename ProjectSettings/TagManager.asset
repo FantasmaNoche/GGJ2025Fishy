@@ -13,6 +13,11 @@ TagManager:
   - PlaceDeLaCrevette
   - SpawnCrevette
   - ShrimpBubbles
+  - FishyLvl1
+  - FishyLvl2
+  - FishyLvl3
+  - FishyLvl4
+  - FishyLvl5
   layers:
   - Default
   - TransparentFX
