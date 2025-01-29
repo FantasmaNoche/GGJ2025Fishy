@@ -36,4 +36,9 @@ public class FishyLvl2 : MonoBehaviour
             yield return new WaitForSeconds(2);
         }
     }
+    
+    public class PlayerData : MonoBehaviour
+    {
+        public float spawnRateMultiplier = 2f; 
+    }
 }
