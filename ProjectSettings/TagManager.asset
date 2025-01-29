@@ -4,16 +4,12 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Bullet
-  - CrevettePistolet
   - PlaceDeLaCrevette
   - SpawnCrevette
-  - ShrimpBubbles
   - FishyLvl1
-  - FishyLvl2
   - FishyLvl3
-  - FishyLvl4
-  - FishyLvl5
+  - ShrimpBubbles
+  - Crevette
   layers:
   - Default
   - TransparentFX
