@@ -18,7 +18,7 @@ public class FishyAttackLvl4 : MonoBehaviour
     {
         if (fishyLvl4 != null && fishyLvl4.charging >= fishyLvl4.maxCharge)
         {
-            if (Input.GetKey(KeyCode.Q)) 
+            if (Input.GetMouseButtonDown(1)) 
             {
                 Attack();
                 fishyLvl4.charging = 0; 
