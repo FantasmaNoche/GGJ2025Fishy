@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 8498034886127417910}
   - component: {fileID: 8204134027049375312}
   - component: {fileID: 4043769603086103091}
+  - component: {fileID: 828660750969712613}
+  - component: {fileID: -5810374645667713766}
   m_Layer: 0
   m_Name: Crevette
   m_TagString: CrevettePistolet
@@ -148,8 +150,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb9169c8ebe39e24ca02190819c416fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToDeath: 3
   spawnPoint: {fileID: 3330100964399016724}
   bullet: {fileID: 7863998524467174917, guid: b94cc34a0ee63f44b81b1481d4178301, type: 3}
   shotTime: 2
   startTime: 0
+--- !u!114 &828660750969712613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7040733128930017152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe007f9772e69f343b02f22714b20c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  PlaceDeLaCrevette: {fileID: 0}
+--- !u!114 &-5810374645667713766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7040733128930017152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be747f2b8819f5247a6f6aa539725bef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDeath: 10
+  SpawnCrevette: {fileID: 0}
+  speedFuite: 8

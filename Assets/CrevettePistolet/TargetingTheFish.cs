@@ -4,7 +4,7 @@ using UnityEngine;
 public class TargetingTheFish : MonoBehaviour
 {
     public Transform target;
-    public float rotationSpeed = 200f;
+    public float rotationSpeed = 100f;
     public float speed = 10f;
 
 
@@ -26,9 +26,6 @@ public class TargetingTheFish : MonoBehaviour
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         transform.Translate(Vector2.right * speed * Time.deltaTime);
-    }    // Update is called once per frame
-        void Update()
-    {
+    }   
         
-    }
 }

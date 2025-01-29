@@ -8,6 +8,11 @@ TagManager:
   - Canvas
   - ShrimpBubbles
   - Shrimp
+  - Bullet
+  - CrevettePistolet
+  - PlaceDeLaCrevette
+  - SpawnCrevette
+  - ShrimpBubbles
   layers:
   - Default
   - TransparentFX

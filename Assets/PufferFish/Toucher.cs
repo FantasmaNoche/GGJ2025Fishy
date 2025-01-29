@@ -7,7 +7,7 @@ public class Toucher : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.name == "Bullet")
+        if (coll.gameObject.name == "ShrimpBubbles")
         {
             Debug.Log("Toucher");
 

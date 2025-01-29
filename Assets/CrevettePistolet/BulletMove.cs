@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BulletMove : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed;
     Transform myTransform;
 
     void Start(){
