@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c768ba763ce7b1a45a3f90bdeed57a7e
+guid: 584fcab028d53f844a95f1ab05e09b60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1008308317487788991
-    second: image poisson random_0
+      213: -2251315436664255395
+    second: pngtree-pistol-shrimp-art-png-image_12782172_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image poisson random_0
+      name: pngtree-pistol-shrimp-art-png-image_12782172_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 27
-        width: 2900
-        height: 1599
+        x: 30
+        y: 6
+        width: 330
+        height: 353
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14c81107de4c102f0800000000000000
-      internalID: -1008308317487788991
+      spriteID: d5c0640d988b1c0e0800000000000000
+      internalID: -2251315436664255395
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      image poisson random_0: -1008308317487788991
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

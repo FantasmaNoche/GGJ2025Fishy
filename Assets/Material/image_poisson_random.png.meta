@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      image_poisson_random_0: 6404438617519251783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

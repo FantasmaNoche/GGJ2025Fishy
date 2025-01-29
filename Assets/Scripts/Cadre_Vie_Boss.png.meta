@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cadre_Vie_Boss_0: 6766299202142157372
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
