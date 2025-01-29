@@ -4,15 +4,12 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Fishy
-  - Canvas
-  - ShrimpBubbles
-  - Shrimp
-  - Bullet
-  - CrevettePistolet
   - PlaceDeLaCrevette
   - SpawnCrevette
+  - FishyLvl1
+  - FishyLvl3
   - ShrimpBubbles
+  - Crevette
   - FishyLvl1
   - FishyLvl2
   - FishyLvl3
