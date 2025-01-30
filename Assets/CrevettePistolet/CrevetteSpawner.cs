@@ -20,6 +20,10 @@ public class CrevetteSpawner : MonoBehaviour
     void Awake()
     {
         player = FindFirstObjectByType<PlayerData>();
+        if (player == null)
+        {
+            Debug.LogError("PlayerData not found in the scene! Make sure an object with PlayerData exists.");
+        }
     }
 
     /// <summary>
@@ -43,12 +47,22 @@ public class CrevetteSpawner : MonoBehaviour
 
     private void SpawnFish()
     {
-        int random = Random.Range(0, crevettes.Length);
+        if (crevettes == null || crevettes.Length == 0)
+        {
+            Debug.LogError("Crevettes array is empty or unassigned! Assign it in the Inspector.");
+            return;
+        }
 
+        int random = Random.Range(0, crevettes.Length);
         CrevetteController crevetteToSpawn = crevettes[random];
 
-        CrevetteController createdCrevette = Instantiate(crevetteToSpawn);
+        if (crevetteToSpawn == null)
+        {
+            Debug.LogError("Selected CrevetteController is null! Check the array in the Inspector.");
+            return;
+        }
 
+        CrevetteController createdCrevette = Instantiate(crevetteToSpawn);
         createdCrevette.transform.position = transform.position;
     }
     
