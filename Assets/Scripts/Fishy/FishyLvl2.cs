@@ -24,7 +24,22 @@ public class FishyLvl2 : MonoBehaviour
         
         StartCoroutine(ChargeCoroutine());
     }
-
+    void Awake()
+    {
+        PlayTransfo();
+    }
+    
+    public AudioClip audio1;
+    private AudioSource _audioSource;
+    
+    void PlayTransfo()
+    {
+        GameObject audioObject = new GameObject("TempAudio");
+        AudioSource tempAudioSource = audioObject.AddComponent<AudioSource>();
+        tempAudioSource.clip = audio1;
+        tempAudioSource.Play();
+        Destroy(audioObject, audio1.length);
+    }
     IEnumerator ChargeCoroutine()
     {
         yield return new WaitForSeconds(1);
@@ -35,5 +50,10 @@ public class FishyLvl2 : MonoBehaviour
             chargeAttack.SetCharge(charging);
             yield return new WaitForSeconds(2);
         }
+    }
+    
+    public class PlayerData : MonoBehaviour
+    {
+        public float spawnRateMultiplier = 2f; 
     }
 }
