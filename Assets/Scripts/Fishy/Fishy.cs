@@ -21,6 +21,7 @@ public class Fishy : MonoBehaviour
     private void Start()
     {
         fishyCounter = GameObject.FindFirstObjectByType<FishyCounter>();
+        
     }
 
     void Update()
@@ -33,10 +34,13 @@ public class Fishy : MonoBehaviour
         int newLevel = 0;
         foreach (int click in clicksForLevel)
         {
-            if(fishyCounter.click >= click)
+          
+            if (fishyCounter.click >= click)
                 newLevel = newLevel + 1;
+                
             else
                 break;
+                
         }
 
         
@@ -51,9 +55,11 @@ public class Fishy : MonoBehaviour
             lvlInstance.transform.localPosition = Vector3.zero;
             currentLevel = newLevel;
         }
-        
     }
 
+    public AudioClip audio1;
+    private AudioSource _audioSource;
     
+
   
 }
