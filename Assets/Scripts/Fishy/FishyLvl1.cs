@@ -38,6 +38,7 @@ public class FishyLvl1 : MonoBehaviour
         GameObject audioObject = new GameObject("TempAudio");
         AudioSource tempAudioSource = audioObject.AddComponent<AudioSource>();
         tempAudioSource.clip = audio1;
+        tempAudioSource.priority = 10;
         tempAudioSource.Play();
         Destroy(audioObject, audio1.length);
     }
