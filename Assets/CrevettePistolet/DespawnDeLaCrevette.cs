@@ -5,14 +5,14 @@ using UnityEngine.UIElements;
 
 public class DespawnDeLaCrevette : MonoBehaviour
 {
-    public float timeToDeath = 5f;
-    public GameObject SpawnCrevette;
+    public float timeToDeath;
     private Transform target;
-    public float speedFuite = 8f;
+    
     
     void Update()
     {
         StartCoroutine(Despawn());
+    
     }
 
     private void WaitForSeconds()
@@ -25,5 +25,6 @@ public class DespawnDeLaCrevette : MonoBehaviour
         yield return new WaitForSeconds(timeToDeath);
         Destroy(gameObject);
     }
+    
 
 }
