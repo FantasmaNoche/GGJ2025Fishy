@@ -3,19 +3,26 @@ using UnityEngine;
 public class GoInPlaceNewVer : MonoBehaviour
 {
     public float speed = 5f;
-    public GameObject PlaceDeLaCrevette;
     private Vector2 targetPosition;
 
     void Start()
     {
-        BoxCollider2D area = PlaceDeLaCrevette.GetComponent<BoxCollider2D>();
+        GameObject placeDeLaCrevette = GameObject.FindWithTag("PlaceDeLaCrevette");
+
+        if (placeDeLaCrevette == null)
+        {
+            Debug.LogError("No GameObject with tag 'PlaceDeLaCrevette' found! Make sure to assign the correct tag.");
+            return;
+        }
+
+        BoxCollider2D area = placeDeLaCrevette.GetComponent<BoxCollider2D>();
         if (area != null)
         {
             targetPosition = GetRandomPointInZone(area);
         }
         else
         {
-            Debug.LogError("No BoxCollider2D found on PlaceDeLaCrevette! Assign one to define the target zone.");
+            Debug.LogError("No BoxCollider2D found on the object with tag 'PlaceDeLaCrevette'! Assign one to define the target zone.");
         }
     }
 

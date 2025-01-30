@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9125628898217745140}
   - component: {fileID: 1322709814507918420}
   - component: {fileID: 6397505262584114606}
+  - component: {fileID: 5116295802593224081}
   m_Layer: 0
   m_Name: Fishy
   m_TagString: Fishy
@@ -54,6 +55,7 @@ MonoBehaviour:
   clicksForLevel: 000000000f0000001e0000003c00000064000000
   FishyBase: {fileID: 1103469902668056878}
   clicks: 0
+  audio1: {fileID: 0}
 --- !u!61 &6397505262584114606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100,3 +102,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5116295802593224081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103469902668056878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4b0436f0b7adb4faca156cf0f3857c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRateMultiplier: 0
+  currentSize: 0
+  maxSize: 0
+  minSize: 0
