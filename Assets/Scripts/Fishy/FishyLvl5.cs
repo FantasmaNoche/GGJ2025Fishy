@@ -24,7 +24,22 @@ public class FishyLvl5 : MonoBehaviour
         
         StartCoroutine(ChargeCoroutine());
     }
-
+    void Awake()
+    {
+        PlayTransfo();
+    }
+    
+    public AudioClip audio1;
+    private AudioSource _audioSource;
+    
+    void PlayTransfo()
+    {
+        GameObject audioObject = new GameObject("TempAudio");
+        AudioSource tempAudioSource = audioObject.AddComponent<AudioSource>();
+        tempAudioSource.clip = audio1;
+        tempAudioSource.Play();
+        Destroy(audioObject, audio1.length);
+    }
     IEnumerator ChargeCoroutine()
     {
         yield return new WaitForSeconds(1);
