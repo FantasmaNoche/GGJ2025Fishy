@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      crevette just a girl_0: 9010768891207425388
+      crevette just a girl_1: 7882801007776291016
+      crevette just a girl_2: 1313631088657682301
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
