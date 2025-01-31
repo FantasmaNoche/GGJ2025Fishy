@@ -5,7 +5,7 @@ public class GoInPlace : MonoBehaviour
 {
     private Transform target;
     public float speed = 5f;
-    public GameObject PlaceDeLaCrevette;
+    private GameObject PlaceDeLaCrevette;
 
     void Start()
     {

@@ -14,8 +14,21 @@ public class FishyDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ShrimpBubbles"))
         {
+            PlayDamage();
             fishyCounter.ApplyDamage(10);
         }
+    }
+    public AudioClip audio1;
+    private AudioSource _audioSource;
+    
+    void PlayDamage()
+    {
+        GameObject audioObject = new GameObject("TempAudio");
+        AudioSource tempAudioSource = audioObject.AddComponent<AudioSource>();
+        tempAudioSource.clip = audio1;
+        tempAudioSource.priority = 20;
+        tempAudioSource.Play();
+        Destroy(audioObject, audio1.length);
     }
         
     

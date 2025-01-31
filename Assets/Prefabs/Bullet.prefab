@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1312366594396523157}
   - component: {fileID: 6152302650549650087}
   - component: {fileID: 1390290520105206450}
+  - component: {fileID: 810070307400781532}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: ShrimpBubbles
@@ -30,13 +31,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7863998524467174917}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -0.92281175, y: -0.1943, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.009435437, w: -0.9999555}
+  m_LocalPosition: {x: -0.92281175, y: -0.1942998, z: 9.0440276e-14}
   m_LocalScale: {x: 0.19272, y: 0.19272, z: 0.19272}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 358.919}
 --- !u!212 &4526692263769015432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81,12 +82,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 3872967754505387808, guid: 2f60290f81396e945a89ae0fecc1da31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.03, y: 2.66}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -197,3 +198,17 @@ MonoBehaviour:
   target: {fileID: 0}
   rotationSpeed: 200
   speed: 10
+--- !u!114 &810070307400781532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7863998524467174917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4744f89fc5ad9a9419a19cedd89de810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDeath: 3
+  bullet: {fileID: 7863998524467174917}

@@ -1,27 +1,37 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class FuiteDeLaCrevette : MonoBehaviour
 {
-    public int speed;
-    public GameObject pointDeFuite;
-    public float tempsAvantLaFuite;
-    private Transform target;
-    void Start()
+  public float tempsAvantLaFuite;
+  public float speedFuite;
+  private GameObject PointDeFuite;
+  private Transform target;
+
+
+  void Start(){
+
+    target = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();
+  }
+
+  private void OnCollisionEnter2D(Collision2D collision)
+  {
+    if (collision.gameObject.CompareTag("PlaceDeLaCrevette"))
     {
-        
-        target = GameObject.FindGameObjectWithTag("SpawnCrevette").GetComponent<Transform>();
-
+      Debug.Log("Fuite");
+      StartCoroutine(Fuite());
     }
+  }
 
-    //void OnCollisionEnter2D(Collision2D collision)
+    private IEnumerator Fuite()
+  {
+    yield return new WaitForSeconds(tempsAvantLaFuite);
 
-   // {
-       // yield return new WaitForSeconds(tempsAvantLaFuite);
-        //if (collision.gameObject.CompareTag("PlaceDeLaCrevette"))
-        //{
-          //  transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-
-        //}
- //}
+    while (Vector2.Distance(transform.position, target.position) > 0.1f)
+    {
+      transform.position = Vector2.MoveTowards(transform.position, target.position, speedFuite * Time.deltaTime);
+      yield return null;
+    }
+  }
 }

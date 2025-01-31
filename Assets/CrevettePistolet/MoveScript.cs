@@ -21,31 +21,12 @@ public class MoveScript : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("FishyLvl1"))
+        if (collision.gameObject.CompareTag("Fishy"))
         {
             Destroy(gameObject);
             Debug.Log("hit");
         }
-        if (collision.gameObject.CompareTag("FishyLvl2"))
-        {
-            Destroy(gameObject);
-            Debug.Log("hit");
-        }
-        if (collision.gameObject.CompareTag("FishyLvl3"))
-        {
-            Destroy(gameObject);
-            Debug.Log("hit");
-        }
-        if (collision.gameObject.CompareTag("FishyLvl4"))
-        {
-            Destroy(gameObject);
-            Debug.Log("hit");
-        }
-        if (collision.gameObject.CompareTag("FishyLvl5"))
-        {
-            Destroy(gameObject);
-            Debug.Log("hit");
-        }
+       
     }
 
 }
