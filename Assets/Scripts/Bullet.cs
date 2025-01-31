@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -24,8 +25,9 @@ public class Bullet : MonoBehaviour
             if (rb != null)
             {
                 rb.linearVelocity = pointDeTir.right * vitesseProjectile; // Le projectile se d�place dans la direction du "up" du point de tir
-            }
-        }
+            } }
+
+     
     }
 }
 

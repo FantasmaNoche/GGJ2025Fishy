@@ -18,7 +18,7 @@ public class FishyAttackLvl2 : MonoBehaviour
     {
         if (fishyLvl2 != null && fishyLvl2.charging >= fishyLvl2.maxCharge)
         {
-            if (Input.GetKey(KeyCode.Q)) 
+            if (Input.GetMouseButtonDown(1)) 
             {
                 Attack();
                 fishyLvl2.charging = 0; 
@@ -32,8 +32,22 @@ public class FishyAttackLvl2 : MonoBehaviour
         GameObject[] shrimps = GameObject.FindGameObjectsWithTag("Shrimp");
         foreach (GameObject shrimp in shrimps)
         {
+            PlayAttack();
             Destroy(shrimp);
         }
+    }
+    
+    public AudioClip audio1;
+    private AudioSource _audioSource;
+    
+    void PlayAttack()
+    {
+        GameObject audioObject = new GameObject("TempAudio");
+        AudioSource tempAudioSource = audioObject.AddComponent<AudioSource>();
+        tempAudioSource.clip = audio1;
+        tempAudioSource.priority = 15;
+        tempAudioSource.Play();
+        Destroy(audioObject, audio1.length);
     }
 
 }
