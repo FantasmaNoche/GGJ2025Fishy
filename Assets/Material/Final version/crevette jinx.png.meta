@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      crevette jinx_0: 8493335307532390054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

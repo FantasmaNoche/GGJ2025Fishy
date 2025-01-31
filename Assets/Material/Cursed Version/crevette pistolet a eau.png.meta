@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      crevette pistolet a eau_0: -3001297160091379153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
