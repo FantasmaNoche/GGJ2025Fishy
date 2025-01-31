@@ -6,25 +6,23 @@ using UnityEngine.UIElements;
 public class DespawnDeLaCrevette : MonoBehaviour
 {
     public float timeToDeath;
-    private Transform target;
-    
-    
-    void Update()
-    {
-        StartCoroutine(Despawn());
-    
-    }
+    private Animator animator;
 
-    private void WaitForSeconds()
+    void Start()
     {
-        throw new NotImplementedException();
+        animator = GetComponent<Animator>();
+        StartCoroutine(Despawn());
     }
 
     IEnumerator Despawn()
     {
+       
+        animator.SetBool("isDead", true);
+
+        
         yield return new WaitForSeconds(timeToDeath);
+
+       
         Destroy(gameObject);
     }
-    
-
 }

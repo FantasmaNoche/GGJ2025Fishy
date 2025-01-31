@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3330100964399016724}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.512, y: 0, z: 0}
+  m_LocalPosition: {x: 2.38, y: 1.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49,8 +49,9 @@ GameObject:
   - component: {fileID: 6440059223994660687}
   - component: {fileID: 7434541797711919199}
   - component: {fileID: 8599393087811326044}
+  - component: {fileID: -7878021474817638108}
   m_Layer: 0
-  m_Name: Crevette
+  m_Name: CrevettePistoletAEau
   m_TagString: CrevettePistolet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +67,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3, y: -2, z: 0}
-  m_LocalScale: {x: 0.6868991, y: 0.45380953, z: 1.1932936}
+  m_LocalScale: {x: 0.30290335, y: 0.27985072, z: 1.1932936}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6903927917213875171}
@@ -116,7 +117,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2251315436664255395, guid: 584fcab028d53f844a95f1ab05e09b60, type: 3}
+  m_Sprite: {fileID: -5233855583156121079, guid: 45989c8e08c6f8847a6d9522e8bafdc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -249,7 +250,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.3, y: 3.53}
+    oldSize: {x: 6.99, y: 5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -284,3 +285,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempsAvantLaFuite: 3
   speedFuite: 15
+--- !u!95 &-7878021474817638108
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7040733128930017152}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
