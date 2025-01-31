@@ -54,6 +54,7 @@ MonoBehaviour:
   clicksForLevel: 000000000f0000001e0000003c00000064000000
   FishyBase: {fileID: 1103469902668056878}
   clicks: 0
+  audio1: {fileID: 0}
 --- !u!61 &6397505262584114606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -91,10 +92,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.55, y: 6.39}
+    newSize: {x: 5.45, y: 5.48}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
